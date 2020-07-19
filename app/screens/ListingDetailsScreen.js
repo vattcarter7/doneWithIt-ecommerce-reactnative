@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  View,
-  StyleSheet,
-  KeyboardAvoidingView,
-  Platform,
-  Keyboard
-} from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 import { Image } from 'react-native-expo-image-cache';
 
 import colors from '../config/colors';
@@ -32,8 +26,8 @@ function ListingDetailsScreen({ route }) {
         <Text style={styles.price}>${listing.price}</Text>
         <View style={styles.userContainer}>
           <ListItem
-            image={require('../assets/mosh.jpg')}
-            title='Mosh Hamedani'
+            image={require('../assets/sopheak.jpg')}
+            title='Vatt Sopheak'
             subTitle='5 Listings'
           />
         </View>

@@ -1,9 +1,9 @@
-import React from "react";
-import { View, StyleSheet, Modal } from "react-native";
-import * as Progress from "react-native-progress";
-import LottieView from "lottie-react-native";
+import React from 'react';
+import { View, StyleSheet, Modal } from 'react-native';
+import * as Progress from 'react-native-progress';
+import LottieView from 'lottie-react-native';
 
-import colors from "../config/colors";
+import colors from '../config/colors';
 
 function UploadScreen({ onDone, progress = 0, visible = false }) {
   return (
@@ -20,7 +20,7 @@ function UploadScreen({ onDone, progress = 0, visible = false }) {
             autoPlay
             loop={false}
             onAnimationFinish={onDone}
-            source={require("../assets/animations/done.json")}
+            source={require('../assets/animations/done.json')}
             style={styles.animation}
           />
         )}
@@ -31,13 +31,13 @@ function UploadScreen({ onDone, progress = 0, visible = false }) {
 
 const styles = StyleSheet.create({
   animation: {
-    width: 150,
+    width: 150
   },
   container: {
-    alignItems: "center",
+    alignItems: 'center',
     flex: 1,
-    justifyContent: "center",
-  },
+    justifyContent: 'center'
+  }
 });
 
 export default UploadScreen;

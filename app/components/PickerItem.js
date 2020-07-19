@@ -1,7 +1,7 @@
-import React from "react";
-import { TouchableOpacity, StyleSheet } from "react-native";
+import React from 'react';
+import { TouchableOpacity, StyleSheet } from 'react-native';
 
-import Text from "./Text";
+import Text from './Text';
 
 function PickerItem({ item, onPress }) {
   return (
@@ -13,8 +13,8 @@ function PickerItem({ item, onPress }) {
 
 const styles = StyleSheet.create({
   text: {
-    padding: 20,
-  },
+    padding: 20
+  }
 });
 
 export default PickerItem;

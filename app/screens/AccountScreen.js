@@ -1,29 +1,29 @@
-import React from "react";
-import { StyleSheet, View, FlatList } from "react-native";
+import React from 'react';
+import { StyleSheet, View, FlatList } from 'react-native';
 
-import { ListItem, ListItemSeparator } from "../components/lists";
-import colors from "../config/colors";
-import Icon from "../components/Icon";
-import routes from "../navigation/routes";
-import Screen from "../components/Screen";
-import useAuth from "../auth/useAuth";
+import { ListItem, ListItemSeparator } from '../components/lists';
+import colors from '../config/colors';
+import Icon from '../components/Icon';
+import routes from '../navigation/routes';
+import Screen from '../components/Screen';
+import useAuth from '../auth/useAuth';
 
 const menuItems = [
   {
-    title: "My Listings",
+    title: 'My Listings',
     icon: {
-      name: "format-list-bulleted",
-      backgroundColor: colors.primary,
-    },
+      name: 'format-list-bulleted',
+      backgroundColor: colors.primary
+    }
   },
   {
-    title: "My Messages",
+    title: 'My Messages',
     icon: {
-      name: "email",
-      backgroundColor: colors.secondary,
+      name: 'email',
+      backgroundColor: colors.secondary
     },
-    targetScreen: routes.MESSAGES,
-  },
+    targetScreen: routes.MESSAGES
+  }
 ];
 
 function AccountScreen({ navigation }) {
@@ -35,7 +35,7 @@ function AccountScreen({ navigation }) {
         <ListItem
           title={user.name}
           subTitle={user.email}
-          image={require("../assets/mosh.jpg")}
+          image={require('../assets/sopheak.jpg')}
         />
       </View>
       <View style={styles.container}>
@@ -58,8 +58,8 @@ function AccountScreen({ navigation }) {
         />
       </View>
       <ListItem
-        title="Log Out"
-        IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
+        title='Log Out'
+        IconComponent={<Icon name='logout' backgroundColor='#ffe66d' />}
         onPress={() => logOut()}
       />
     </Screen>
@@ -68,11 +68,11 @@ function AccountScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   screen: {
-    backgroundColor: colors.light,
+    backgroundColor: colors.light
   },
   container: {
-    marginVertical: 20,
-  },
+    marginVertical: 20
+  }
 });
 
 export default AccountScreen;

@@ -1,11 +1,11 @@
-import client from "./client";
+import client from './client';
 
 const send = (message, listingId) =>
-  client.post("/messages", {
+  client.post('/messages', {
     message,
-    listingId,
+    listingId
   });
 
 export default {
-  send,
+  send
 };
